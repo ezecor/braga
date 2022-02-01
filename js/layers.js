@@ -13,7 +13,7 @@ var map = L.map('map', {
     //zoom: 8,
     pan: false,
     //zoomControl: false,
-    layers: [CartoDB_PositronNoLabels]
+    layers: [CartoDB_Positron]
 });
 var dist = L.geoJSON(distrito, {
     style: conc_style,
