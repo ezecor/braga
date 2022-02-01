@@ -1,6 +1,6 @@
-/*var CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+var CartoDB_Positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
-});*/
+});
 var CartoDB_PositronNoLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
 	subdomains: 'abcd',
@@ -9,11 +9,11 @@ var CartoDB_PositronNoLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/li
 var map = L.map('map', {
     center: [40.85, -8.41],
     minZoom: 9,
-    maxZoom: 9,
+    maxZoom: 12,
     //zoom: 8,
     pan: false,
-    zoomControl: false,
-    layers: [CartoDB_Positron]
+    //zoomControl: false,
+    layers: [CartoDB_PositronNoLabels]
 });
 var dist = L.geoJSON(distrito, {
     style: conc_style,
