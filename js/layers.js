@@ -24,7 +24,7 @@ var bounds = dist.getBounds();
 map.fitBounds(dist.getBounds());
 map.setMaxBounds(bounds);
 function atributos(feature, layer) {
-    layer.bindTooltip(feature.properties.Concelho, {permanent:true});
+    layer.bindTooltip(feature.properties.Concelho, {permanent: true});
     layer.on({
         click: onclick
     });
